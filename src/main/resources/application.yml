@@ -1,0 +1,18 @@
+spring:
+  data:
+    mongodb:
+      host: 127.0.0.1
+      port: 27017
+      #数据库
+      database: files
+      #验证库
+      authentication-database: admin
+      #用户（如果MongoDB没有配置授权验证的可以不用写验证信息）
+      username: admin
+      #密码
+      password: admin123
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 10GB
+      max-request-size: 10GB
